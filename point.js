@@ -27,7 +27,7 @@
       popupAnchor:  [-5, -12] 
       });
       var marker = L.marker([-6.2072, 39.3205], {icon: poi}).addTo(groups.dumps).bindPopup
-    ('<b>Urusi collection point</b> <div><img style="width:100%;" src="library/leaflet/images/urusi.jpg"/></div>' ,{minWidth:256});
+    ('<b>Kibele Dumps </b> <div><img style="width:100%;" src="library/leaflet/images/kipele.jpg"/></div>' ,{minWidth:256});
    
 
 

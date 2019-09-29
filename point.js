@@ -21,7 +21,7 @@
 
   
     var poi = L.icon({
-      iconUrl: 'library/leaflet/images/dump.png',
+      iconUrl: 'library/leaflet/images/kipele.jpg',
       iconSize:     [40, 28],
       iconAnchor:   [25, 16],
       popupAnchor:  [-5, -12] 

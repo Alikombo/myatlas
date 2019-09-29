@@ -39,7 +39,7 @@
     popupAnchor:  [-5, -12] 
     });
     var marker = L.marker([-6.1789725,39.2054938], {icon: point1}).addTo(groups.recyclebin).bindPopup
-    ('<b>Urusi collection point</b> <div><img style="width:100%;" src="library/leaflet/images/dump 2.jpg"/></div>' ,{minWidth:256});
+    ('<b>Urusi collection point</b> <div><img style="width:100%;" src="library/leaflet/images/urusi.jpg"/></div>' ,{minWidth:256});
 
     //-6.1554470, 39.2116630	shauri moyo
   var point2 = L.icon({
@@ -49,7 +49,7 @@
     popupAnchor:  [-5, -12] 
     });
     var marker = L.marker([-6.1554470, 39.2116630], {icon: point2}).addTo(groups.recyclebin).bindPopup
-    ('<b>Shauri moyo collection point</b> <div><img style="width:100%;" src="library/leaflet/images/dump 2.jpg"/></div>' ,{minWidth:256});
+    ('<b>Shauri moyo collection point</b> <div><img style="width:100%;" src="library/leaflet/images/alabama.jpg"/></div>' ,{minWidth:256});
 
      // -6.1678063, 39.2233492	kwa wazee
   var point2 = L.icon({
@@ -59,7 +59,7 @@
     popupAnchor:  [-5, -12] 
     });
     var marker = L.marker([-6.1678063, 39.2233492], {icon: point2}).addTo(groups.recyclebin).bindPopup
-    ('<b>Kwa wazee collection point</b> <div><img style="width:100%;" src="library/leaflet/images/dump 2.jpg"/></div>' ,{minWidth:256});
+    ('<b>Kwa wazee collection point</b> <div><img style="width:100%;" src="library/leaflet/images/asya.jpg"/></div>' ,{minWidth:256});
 
 
      // -6.1661416, 39.2030000	makadara
@@ -70,7 +70,7 @@
     popupAnchor:  [-5, -12] 
     });
     var marker = L.marker([-6.1661416, 39.2030000], {icon: point2}).addTo(groups.recyclebin).bindPopup
-    ('<b>Makadara collection point</b> <div><img style="width:100%;" src="library/leaflet/images/dump 2.jpg"/></div>' ,{minWidth:256});
+    ('<b>Makadara collection point</b> <div><img style="width:100%;" src="library/leaflet/images/alabama 2.jpg"/></div>' ,{minWidth:256});
 
 
 
@@ -93,7 +93,7 @@
     popupAnchor:  [-5, -12] 
     });
     var marker = L.marker([-6.1678063, 39.2233492], {icon: point2}).addTo(groups.recyclebin).bindPopup
-    ('<b>Kwa wazee collection point</b> <div><img style="width:100%;" src="library/leaflet/images/dump 2.jpg"/></div>' ,{minWidth:256});
+    ('<b>Kwa wazee collection point</b> <div><img style="width:100%;" src="library/leaflet/images/baja 1.jpg"/></div>' ,{minWidth:256});
 
 
          // -6.1607152, 39.2096475	Mkele
@@ -104,7 +104,7 @@
     popupAnchor:  [-5, -12] 
     });
     var marker = L.marker([-6.1607152, 39.2096475], {icon: point2}).addTo(groups.recyclebin).bindPopup
-    ('<b>Mkele collection point</b> <div><img style="width:100%;" src="library/leaflet/images/dump 2.jpg"/></div>' ,{minWidth:256});
+    ('<b>Mkele collection point</b> <div><img style="width:100%;" src="library/leaflet/images/majalis 2.jpg"/></div>' ,{minWidth:256});
 
  
   
@@ -116,7 +116,7 @@
     popupAnchor:  [-5, -12] 
     });
     var marker = L.marker([-6.1528383, 39.2200008], {icon: point2}).addTo(groups.recyclebin).bindPopup
-    ('<b>Chumbuni collection point</b> <div><img style="width:100%;" src="library/leaflet/images/dump 2.jpg"/></div>' ,{minWidth:256});
+    ('<b>Chumbuni collection point</b> <div><img style="width:100%;" src="library/leaflet/images/kisiwandui.jpg"/></div>' ,{minWidth:256});
 
   
 
@@ -128,7 +128,7 @@
     popupAnchor:  [-5, -12] 
     });
     var marker = L.marker([-6.004167, 39.328308], {icon: point2}).addTo(groups.recyclebin).bindPopup
-    ('<b>Amani collection point</b> <div><img style="width:100%;" src="library/leaflet/images/dump 2.jpg"/></div>' ,{minWidth:256});
+    ('<b>Amani collection point</b> <div><img style="width:100%;" src="library/leaflet/images/asya 2.jpg"/></div>' ,{minWidth:256});
 
 
   //L.marker([-6.165954, 39.202282]).bindPopup('A recyclebin').addTo(groups.recyclebin);
@@ -152,7 +152,7 @@
     popupAnchor:  [-5, -12] 
     });
     var marker = L.marker([-6.1631009, 39.2249867], {icon: point2}).addTo(groups.recyclebin).bindPopup
-    ('<b>Amani collection point</b> <div><img style="width:100%;" src="library/leaflet/images/dump 2.jpg"/></div>' ,{minWidth:256});
+    ('<b>Amani collection point</b> <div><img style="width:100%;" src="library/leaflet/images/majalis 2.jpg"/></div>' ,{minWidth:256});
 
    // 	Majalis
  var point2 = L.icon({

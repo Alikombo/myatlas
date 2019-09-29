@@ -21,12 +21,13 @@
 
   
     var poi = L.icon({
-      iconUrl: 'library/leaflet/images/kipele.jpg',
+      iconUrl: 'library/leaflet/images/dump.png',
       iconSize:     [40, 28],
       iconAnchor:   [25, 16],
       popupAnchor:  [-5, -12] 
       });
-      var marker = L.marker([-6.2072, 39.3205], {icon: poi}).addTo(groups.dumps);
+      var marker = L.marker([-6.2072, 39.3205], {icon: poi}).addTo(groups.dumps).bindPopup
+    ('<b>Urusi collection point</b> <div><img style="width:100%;" src="library/leaflet/images/urusi.jpg"/></div>' ,{minWidth:256});
    
 
 

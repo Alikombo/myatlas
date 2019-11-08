@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Matrix Admin</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="css/matrix-style.css" />
+<link rel="stylesheet" href="css/matrix-media.css" />
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" charset="utf-8" href="library/leaflet/leaflet.css" />
+	<script type="text/javascript" charset="utf-8" src="library/leaflet/leaflet.js"></script>
+	<script type="text/javascript" charset="utf-8" src="dist/leaflet-meters.js"></script>
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+   
+   <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /   
+   <script src="data/countries.geojson"></script>
+   <link rel="stylesheet" href="dist/leaflet.groupedlayercontrol.min.css" />
+   <link rel="stylesheet" href="dist/leaflet-routing-machine.css" />
+<style>
+
+body {
+	padding: 0;
+	margin: 0;
+}
+html, body, #map {
+	height: 100%;
+	width: 100vw;
+}
+</style>
+</head>
+<body>
+
+    <hr>
+   
+    <div id="map" style="width: 100%; height: 530px; border: 1px solid #ccc"></div>
+    
+<script src="dist/leaflet.groupedlayercontrol.min.js"></script>
+<script src="dist/leaflet.groupedlayercontrol.min.js.map"></script>
+<script type="text/javascript" src="point.js"></script>
+<script src="dist/leaflet-routing-machine.js"></script>
+<script>
+var map = L.map('map').fitWorld();
+
+L.tileLayer('https://api.tiles.mapbox.com/v4/MapID/997/256/{z}/{x}/{y}.png?access_token={accessToken}', {
+	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+	maxZoom: 18
+}).addTo(map);
+map.locate({setView: true, maxZoom: 16});
+
+
+function onLocationFound(e) {
+	var radius = e.accuracy;
+
+	L.marker(e.latlng).addTo(map)
+		.bindPopup("You are within " + radius + " meters from this point").openPopup();
+
+	L.circle(e.latlng, radius).addTo(map);
+}
+
+map.on('locationfound', onLocationFound);
+
+function onLocationError(e) {
+	alert(e.message);
+}
+
+map.on('locationerror', onLocationError);
+
+</script>
+
+
+    </div>
+
+<!--end-Footer-part-->
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.flot.min.js"></script> 
+<script src="js/jquery.flot.pie.min.js"></script> 
+<script src="js/matrix.charts.js"></script> 
+<script src="js/jquery.flot.resize.min.js"></script> 
+<script src="js/matrix.js"></script> 
+<script src="js/jquery.peity.min.js"></script> 
+<!--Real-time-chart-js-->
+<script type="text/javascript">
+
+</script> 
+<!--Turning-series-chart-js-->
+<script src="js/matrix.dashboard.js"></script>
+</body>
+</html>
